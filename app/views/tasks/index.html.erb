@@ -1,1 +1,11 @@
 <h1>This is the Index</h1>
+
+<div class>
+  <% @tasks.each do |t| %>
+    <ul>
+      <li>
+        <%= link_to t.title, task_path(t) %>
+      </li>
+    </ul>
+  <% end -%>
+</div>

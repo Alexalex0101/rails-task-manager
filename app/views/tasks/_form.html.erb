@@ -1,0 +1,12 @@
+<div style="padding: 20px;">
+  <!-- this is the form -->
+  <%= form_for(@task) do |f| %>
+    <%= f.label :title , :task %>
+    <%= f.text_field :title %>
+    <%= f.label :details , :details %>
+    <%= f.text_field :details %>
+    <%= f.label :completed, "Completed" %>
+    <%= f.check_box :completed %>
+    <%= f.submit %>
+  <% end %>
+</div>
